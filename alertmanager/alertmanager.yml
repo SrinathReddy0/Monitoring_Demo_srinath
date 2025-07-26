@@ -1,0 +1,15 @@
+global:
+  smtp_smarthost: 'smtp.gmail.com:587'
+  smtp_from: 'gopavaramsrinath7800@gmail.com'
+  smtp_auth_username: 'gopavaramsrinath7800@gmail.com'
+  smtp_auth_password: 'wjdoxljaqcneeecj'  # NOT your Gmail password
+
+route:
+  receiver: 'email-alert'
+
+receivers:
+  - name: 'email-alert'
+    email_configs:
+      - to: 'gopavaramsrinath7800@gmail.com'
+        send_resolved: true
+
